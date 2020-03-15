@@ -5,15 +5,17 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@stripe/stripe-js": "^1.1.0",
     "gatsby": "^2.19.7",
     "gatsby-image": "^2.2.39",
-    "gatsby-plugin-manifest": "^2.2.39",
+    "gatsby-plugin-manifest": "^2.2.47",
     "gatsby-plugin-offline": "^3.0.32",
     "gatsby-plugin-react-helmet": "^3.1.21",
-    "gatsby-plugin-sharp": "^2.4.3",
+    "gatsby-plugin-sharp": "^2.4.12",
     "gatsby-plugin-stripe": "^1.2.4",
     "gatsby-source-filesystem": "^2.1.46",
-    "gatsby-transformer-sharp": "^2.3.13",
+    "gatsby-source-stripe": "^3.0.7",
+    "gatsby-transformer-sharp": "^2.3.18",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
@@ -39,9 +41,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/stanclarke-jr/1959-what-a-year"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/stanclarke-jr/1959-what-a-year/issues"
   }
 }

@@ -5,11 +5,12 @@ import Image from "../components/image"
 import SEO from "../components/seo"
 import Checkout from "../components/checkout"
 
+
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="Home" keywords={[`gatsby`, `e-commerce`]} />
 
-      <Image/>
+    <Image/>
 
     <div>
       <p>

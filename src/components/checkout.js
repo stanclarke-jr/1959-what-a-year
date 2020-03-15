@@ -1,5 +1,5 @@
 import React from "react"
-/* z */
+
 const buttonStyles = {
     fontSize: `13px`,
     textAlign: `center`,
@@ -17,15 +17,16 @@ const Checkout = class extends React.Component {
     // You can find your key in the Dashboard:
     // https://dashboard.stripe.com/account/apikeys
     componentDidMount() {
-      this.stripe = window.Stripe(process.env.REACT_APP_STRIPE_TEST_KEY)
+      this.stripe = window.Stripe(`pk_test_BM1pXw4jDueavxzK08HJVP9200dBmnht8Y
+      `)
     }
 
     async redirectToCheckout(event) {
       event.preventDefault()
       const { error } = await this.stripe.redirectToCheckout({
         items: [{ sku: `sku_Goz0d7cnMgyTQI`, quantity: 1}],
-        successUrl: `https://dev.digitaltriptychs.com/1959-what-a-year/success/`,
-        cancelUrl: `https://dev.digitaltriptychs.com/1959-what-a-year/`,
+        successUrl: `${window.location.origin}/success/`,
+        cancelUrl: `${window.location.origin}/`,
       })
 
       if (error) {
@@ -39,7 +40,7 @@ const Checkout = class extends React.Component {
           style={buttonStyles}
           onClick={event => this.redirectToCheckout(event)}
         >
-          BUY
+          BUY NOW
         </button>
       )
     }
