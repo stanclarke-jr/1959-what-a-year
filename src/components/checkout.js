@@ -17,8 +17,7 @@ const Checkout = class extends React.Component {
     // You can find your key in the Dashboard:
     // https://dashboard.stripe.com/account/apikeys
     componentDidMount() {
-      this.stripe = window.Stripe(`pk_test_BM1pXw4jDueavxzK08HJVP9200dBmnht8Y
-      `)
+      this.stripe = window.Stripe(``)
     }
 
     async redirectToCheckout(event) {
